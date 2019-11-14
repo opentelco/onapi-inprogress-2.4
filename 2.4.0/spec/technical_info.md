@@ -272,9 +272,14 @@ Content-Type: application/json
       "crcErrors": 0
     }
   },
-  "fiber": {
+  "sfp": { 
     "dbmRx": "-12",
     "dbmTx": "-8",
+    "vendor": "PRO 10 OPTIX",
+    "distance": "20000(9um)",
+    "wavelength": "1550",
+    "connector": "LC",
+    "type": "1000BASE_BX20_SFP",
     "temp": "35"
   },
 }
@@ -316,9 +321,13 @@ Content-Type: application/json
 | statistics.output.pauses                      | integer           | Egress count of pauses                           |
 | statistics.output.errors                      | integer           | Egress count of errors                           |
 | statistics.output.crcErrors                   | integer           | Egress count of crc errors                       |
-| fiber.dbmRx                                   | string            | Fiber receiver dampening                          |
-| fiber.dbmTx                                   | string            | Fiber transceiver dampening                       | 
-| fiber.temp                                    | string            | SFP temperature                                  |
+| sfp.dbmRx                                     | string            | SFP receiver dampening                           |
+| sfp.dbmTx                                     | string            | SFP transceiver dampening                        | 
+| sfp.temp                                      | string            | SFP temperature                                  |
+| sfp.vendor                                    | string            | SFP Vendor                                       |
+| sfp.distance                                  | string            | SFP distance                                     |
+| sfp.connector                                 | string            | SFP type of connector. LC/SC                     |      
+| sfp.type                                      | string            | SFP type                                         |
 
 
 <h3 id="get-cpe-status">GET cpe/{accessId}/status</h3>
