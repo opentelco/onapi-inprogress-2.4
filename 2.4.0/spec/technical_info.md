@@ -269,7 +269,6 @@ Content-Type: application/json
       "multicast": 100,
       "pauses": 0,
       "errors": 1337,
-      "crcErrors": 0
     }
   },
   "sfp": { 
